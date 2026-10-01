@@ -153,7 +153,8 @@ function acct(){return `<h2>👤 حسابي</h2><div class="box"><small>المس
 <h3 class="sec">سجل المحاولات</h3>${S.log.length?S.log.slice(0,15).map(l=>`<div class="log"><span>${l.ok?'✅':'❌'} ${l.n}</span><span style="color:var(--mu)">${esc(l.t)}</span></div>`).join(''):'<p style="color:var(--mu)">لا توجد محاولات بعد.</p>'}
 <div style="margin-top:20px"><button class="btn s" onclick="if(confirm('مسح كل التقدم؟')){S={done:{},log:[]};save();draw()}">إعادة ضبط التقدم</button></div>`}
 function acad(){return `<div class="acad"><h2>📚 Cyber Academy</h2>`+AC.map(a=>`<details><summary>${a[0]} ${a[1]}</summary><p>${a[2]}</p><code>${esc(a[3])}</code></details>`).join('')+`</div>`}
-draw();
+print ("hi")
+ draw();
 </script>
 </body>
 </html>
